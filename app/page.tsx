@@ -14,7 +14,7 @@ export default function Home() {
             </h1>
           </div>
         </section>
-        <p className="text-left font-light text-slate-200 md:text-center  lg:w-10/12">
+        <p className="text-left font-light text-slate-200 md:text-center lg:text-lg lg:w-9/12 2xl:w-7/12">
           Discover endless entertainment options tailored to your mood and
           weather with our innovative boredom solution app. Find exciting
           activities to enjoy, whether it's a sunny day outdoors or a cozy
@@ -40,14 +40,6 @@ export default function Home() {
           </Button>
         </div>
       </header>
-      {/* <Image
-        alt="umbrella-img"
-        src="/images/umbrella.png"
-        width={500}
-        height={500}
-        priority={true}
-        className="hidden lg:block w-1/3"
-      /> */}
     </main>
   );
 }
