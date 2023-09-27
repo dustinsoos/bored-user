@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +10,22 @@ export default function Clientnavbar() {
   const closeNavbar = () => {
     setIsOpen(false);
   };
+
+  //Closing dropdown nav at a certain screen size
+  const closeDropdownOnResize = () => {
+    if (window.innerWidth > 768 && isOpen) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", closeDropdownOnResize);
+
+    return () => {
+      window.removeEventListener("resize", closeDropdownOnResize);
+    };
+  }, [isOpen]);
+
   return (
     <nav className=" w-full bg-blue-900 px-4 py-2 md:px-8 xl:px-16">
       <ul>
@@ -36,22 +52,15 @@ export default function Clientnavbar() {
               priority={true}
             />
           </button>
+
           <div className="text-white text-center hidden md:flex md:gap-6">
-            <Link href="/" onClick={closeNavbar} className="hover:opacity-70">
+            <Link href="/" className="hover:opacity-70">
               Home
             </Link>
-            <Link
-              href="/exampleuser"
-              onClick={closeNavbar}
-              className="hover:opacity-70"
-            >
+            <Link href="/exampleuser" className="hover:opacity-70">
               Example
             </Link>
-            <Link
-              href="/addfriends"
-              onClick={closeNavbar}
-              className="hover:opacity-70"
-            >
+            <Link href="/addfriends" className="hover:opacity-70">
               Add Friends
             </Link>
           </div>
