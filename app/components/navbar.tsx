@@ -8,14 +8,14 @@ const Navbar = () => {
       <Link href="/">
         <Image
           alt="page-logo"
-          src="/images/umbrella.png"
+          src="/images/games.png"
           width={50}
           height={100}
-          className="w-14 bg-white"
+          className="w-14"
         />
       </Link>
       <ul className=" hidden md:flex md:gap-8">
-        <Link href="/activity">Activity</Link>
+        <Link href="/activity">Example Activity</Link>
         <Link href="/weather">Weather</Link>
       </ul>
       <Image
