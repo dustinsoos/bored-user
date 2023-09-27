@@ -1,12 +1,12 @@
 import React from "react";
 
-const Weather = () => {
+const Addfriends = () => {
   return (
     <main className=" text-white">
       {" "}
-      <div>Weather</div>
+      <div>Add Friends</div>
     </main>
   );
 };
 
-export default Weather;
+export default Addfriends;

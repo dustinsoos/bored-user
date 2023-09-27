@@ -1,12 +1,12 @@
 import React from "react";
 
-const Activity = () => {
+const Example = () => {
   return (
     <main className=" text-white">
       {" "}
-      <div>Activity</div>
+      <div>Example</div>
     </main>
   );
 };
 
-export default Activity;
+export default Example;
