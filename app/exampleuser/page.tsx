@@ -9,12 +9,17 @@ type boredData = {
 
 type userData = {
   results: [
-    { name: { first: string; last: string } },
     {
-      picture: {
-        thumbnail: "https://randomuser.me/api/portraits/thumb/men/75.jpg";
+      name: {
+        first: string;
+        last: string;
       };
     },
+    // {
+    //   picture: {
+    //     thumbnail: string;
+    //   };
+    // },
   ];
 };
 
@@ -30,7 +35,7 @@ async function getBored(): Promise<boredData> {
 }
 
 async function getUser(): Promise<userData> {
-  const response = await fetch("https://randomuser.me/api/?nat=us", {
+  const response = await fetch("https://randomuser.me/api/?inc=name,picture", {
     cache: "no-store",
   });
 
@@ -40,7 +45,7 @@ async function getUser(): Promise<userData> {
 export default async function Example() {
   const [bored, user] = await Promise.all([getBored(), getUser()]);
   const { first, last } = user.results[0].name;
-  const thumbnailUrl = user.results[0].picture.thumbnail;
+  // const thumbnailUrl = user.results[0].picture.thumbnail;
 
   return (
     <main className=" text-white text-center  mt-32 ">
@@ -54,11 +59,11 @@ export default async function Example() {
         <p>
           User: {first} {last}
         </p>
-        <img
+        {/* <img
           src={thumbnailUrl}
           alt="thumbnail-img"
           className="mx-auto w-12 rounded-full"
-        />
+        /> */}
         <RefreshButton />
       </section>
     </main>
