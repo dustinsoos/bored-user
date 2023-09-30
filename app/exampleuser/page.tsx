@@ -1,4 +1,4 @@
-// import Users from "./components/users";
+import RefreshButton from "../components/refresh";
 
 type boredData = {
   activity: string;
@@ -59,6 +59,7 @@ export default async function Example() {
           alt="thumbnail-img"
           className="mx-auto w-12 rounded-full"
         />
+        <RefreshButton />
       </section>
     </main>
   );
