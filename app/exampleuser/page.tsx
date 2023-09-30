@@ -35,7 +35,7 @@ async function getBored(): Promise<boredData> {
 }
 
 async function getUser(): Promise<userData> {
-  const response = await fetch("https://randomuser.me/api/?inc=name,picture", {
+  const response = await fetch("https://randomuser.me/api/?nat=us", {
     cache: "no-store",
   });
 
