@@ -6,9 +6,9 @@ import Navbar from "./components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Activity Forecast",
+  title: "BoreNoMore",
   description:
-    "Discover endless entertainment options tailored to your mood and weather with our innovative boredom solution app. Find exciting activities to enjoy, whether it's a sunny day outdoors or a cozy evening indoors. Never be bored again!",
+    " Where Boredom Meets Adventure! Input the names of your friends and tell us how many are joining the fun. We'll whip up a personalized list of boredom-busting activities perfectly tailored to your group size. Let's turn your free time into fantastic fun, together!",
 };
 
 export default function RootLayout({
