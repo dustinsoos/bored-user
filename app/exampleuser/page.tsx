@@ -46,7 +46,7 @@ export default async function Example() {
   const thumbnailUrl = user.results[0].picture.thumbnail;
 
   return (
-    <main className=" text-white text-center  mt-64 ">
+    <main className=" text-white text-center  mt-52 ">
       <h1 className="text-6xl md:text-8xl xl:text-7xl font-medium bg-gradient-to-b from-white  to-blue-600 text-transparent bg-clip-text">
         Try Example
       </h1>
