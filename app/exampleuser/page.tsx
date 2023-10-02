@@ -57,7 +57,7 @@ export default async function Example() {
           <img
             src={thumbnailUrl}
             alt="thumbnail-img"
-            className="mx-auto rounded-full"
+            className="mx-auto rounded-full outline outline-slate-200"
           />
           <p>
             User: {first} {last}
