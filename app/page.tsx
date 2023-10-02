@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="mt-52 text-white font-myFont grid place-items-center justify-center items-center px-2 ">
+    <main className=" mt-60 text-white font-myFont grid place-items-center justify-center items-center px-2 ">
       <header className=" w-full md:w-1/2 grid gap-4 lg:gap-8 md:justify-center md:place-items-center md:mx-auto">
         <div className="bg-gradient-to-b from-white  to-blue-600 text-transparent bg-clip-text">
           <h1 className=" text-6xl md:text-8xl xl:text-9xl font-medium text-left md:text-center">

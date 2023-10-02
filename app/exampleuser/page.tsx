@@ -50,7 +50,7 @@ export default async function Example() {
   return (
     <main className=" text-white text-center  mt-32 px-4">
       <h1 className="text-6xl md:text-8xl xl:text-7xl font-medium bg-gradient-to-b from-white  to-blue-600 text-transparent bg-clip-text">
-        For yourself
+        Get Activity
       </h1>
       <section className=" mt-4 bg-blue-900 py-4 rounded-lg md:w-1/2 lg:w-1/3 mx-auto outline outline-slate-200">
         <div className="grid gap-2 lg:text-lg">

@@ -75,7 +75,7 @@ export default function Navbar() {
               onClick={closeNavbar}
               className="hover:opacity-70"
             >
-              Example
+              Get Activity
             </Link>
             <Link
               href="/addfriends"
