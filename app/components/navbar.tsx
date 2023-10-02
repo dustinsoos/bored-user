@@ -58,7 +58,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link href="/exampleuser" className="hover:opacity-70">
-              Example
+              Get Activity
             </Link>
             <Link href="/addfriends" className="hover:opacity-70">
               Add Friends
