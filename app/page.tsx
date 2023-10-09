@@ -22,7 +22,7 @@ export default function Home() {
           <Button>
             <Link
               href="/exampleuser"
-              className=" text-sm bg-blue-900 px-4 py-2 rounded-md hover:text-blue-900 hover:outline hover:outline-blue-900 hover:bg-slate-200"
+              className=" text-sm bg-blue-900 px-4 py-2 hover:text-blue-900 hover:outline hover:outline-blue-900 hover:bg-slate-200"
             >
               Get Activity
             </Link>
@@ -30,7 +30,7 @@ export default function Home() {
           <Button>
             <Link
               href="/addfriends"
-              className=" text-sm px-4 py-2 rounded-md outline outline-blue-900 hover:outline-none hover:bg-blue-600 "
+              className=" text-sm px-4 py-2  outline outline-blue-900 hover:outline-none hover:bg-blue-600 "
             >
               Add Friends
             </Link>
