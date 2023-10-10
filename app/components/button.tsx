@@ -1,6 +1,8 @@
 import React, { ReactNode }  from "react";
 
-type ButtonProps = React.HTMLAttributes<HTMLButtonElement>
+type ButtonProps = {
+	size?: 'default' | 'large'
+} & React.HTMLAttributes<HTMLButtonElement>
 
 const Button = ({children}: ButtonProps) => {
   return <button>{children}</button>;
