@@ -29,10 +29,10 @@ export default function Home() {
           </Button>
           <Button>
             <Link
-              href="/addfriends"
+              href="/createpersonas"
               className=" text-sm px-4 py-2  outline outline-blue-900 hover:outline-none hover:bg-blue-600 "
             >
-              Add Friends
+              Create Personas
             </Link>
           </Button>
         </div>

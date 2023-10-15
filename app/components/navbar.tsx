@@ -60,8 +60,8 @@ export default function Navbar() {
             <Link href="/exampleuser" className="hover:opacity-70">
               Get Activity
             </Link>
-            <Link href="/addfriends" className="hover:opacity-70">
-              Add Friends
+            <Link href="/createpersonas" className="hover:opacity-70">
+              Create Personas
             </Link>
           </div>
         </div>
@@ -78,11 +78,11 @@ export default function Navbar() {
               Get Activity
             </Link>
             <Link
-              href="/addfriends"
+              href="/createpersonas"
               onClick={closeNavbar}
               className="hover:opacity-70"
             >
-              Add Friends
+              Create Personas
             </Link>
           </div>
         )}

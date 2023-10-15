@@ -1,10 +1,10 @@
-import React, { ReactNode }  from "react";
+import React, { ReactNode } from "react";
 
 type ButtonProps = {
-	size?: 'default' | 'large'
-} & React.HTMLAttributes<HTMLButtonElement>
+  size?: "default" | "large";
+} & React.HTMLAttributes<HTMLButtonElement>;
 
-const Button = ({children}: ButtonProps) => {
+const Button = ({ children }: ButtonProps) => {
   return <button>{children}</button>;
 };
 
