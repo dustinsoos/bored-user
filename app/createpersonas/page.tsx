@@ -13,7 +13,7 @@ const CreatePersonas = () => {
       </h1>
       <div className="grid gap-10 md:flex   text-white w-2/3 lg:w-1/2 mx-auto lg:justify-between">
         <CreatePerson />
-        <SelectParticipants isClicked={isClicked} setIsClicked={setIsClicked} />
+        <SelectParticipants />
       </div>
     </main>
   );
